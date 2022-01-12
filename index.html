@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title > Random</title>
+    <link rel="stylesheet" href="stylr.css">
+</head>
+<body>
+    <div class="coun">
+     <h1>random Numbes</h1>
+            <button  id="riix">=</button>
+        </span>
+        <br>
+        <br>
+        
+
+        <div class="ans">
+            <p>The Output Is Here </p>
+           <span id="ans"></span>
+           <h3 id="kd"> </h3>
+        </div>
+       <h2 id="foo">
+          
+       </h2>
+    </div>
+    
+ 
+
+
+ 
+</body>
+<script >
+    let btn=document.querySelector("#riix")
+    btn.addEventListener("click",disp)
+    function disp(){
+        let fo=document.querySelector("#foo")
+        let kd=document.querySelector("#kd")
+        let t=Math.floor(Math.random()*100)
+        let ans=document.querySelector("#ans")
+        // console.log(t,ans )
+        ans.innerHTML=t
+        fo.innerHTML="copyright CA207 legends"
+    
+        if(t%2==0){
+            kd.innerHTML="Dhaban"
+        }
+        else{
+            kd.innerHTML="Kinsi"
+        }
+        
+        
+    
+    }
+    </script>
+</html>
